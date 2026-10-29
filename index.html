@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chemp physics building ideas</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            max-width: 650px;
+            width: 100%;
+        }
+        button {
+            background-color: #bb86fc;
+            color: #121212;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #3700b3;
+            color: #ffffff;
+        }
+        #idea-box {
+            font-size: 1.1rem;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #333;
+            padding: 20px;
+            border-radius: 4px;
+            background: #252525;
+            line-height: 1.5;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>chemp physics build ideas 🥀</h2>
+        <button onclick="getRandomIdea()">roll a build idea</button>
+        <div id="idea-box">hit the button to pull a building concept...</div>
+    </div>
+
+    <script>
+        const buildingIdeas = [
+            "design a vertical parkour obstacle course using floating platforms.",
+            "build a zero-gravity floating arena with bouncy walls.",
+            "construct a futuristic cyberpunk neon highway complete with speed pads and ramps.",
+            "design an interactive pinball machine where players act as the ball inside a giant arena.",
+            "construct a skate park bowl with half-pipes, rails, and launch ramps for high-speed runs.",
+            "design a sci-fi elevator shaft that moves up and down using custom physics forces.",
+            "create a giant floating island base accessible only by a precise parkour jump sequence.",
+            "construct a rollercoaster track layout using connected physics segments and steep drops.",
+            "design a massive maze with false walls and dead ends.",
+            "construct a giant statue monument dedicated to the community's wildest physics bugs.",
+            "design a floating airship vessel with propeller props and an open deck layout.",
+            "construct a bouncy trampoline park with tiered jumping platforms of varying elasticity.",
+            "design a high-speed racing track featuring hairpin turns, boost pads, and jump gaps.",
+            "construct a cozy treehouse village connected by suspended rope bridges and platforms.",
+            "build an industrial factory warehouse with crane props.",
+            "construct a giant chessboard arena where players can interact with oversized pieces.",
+            "design a space station interior corridor with zero-gravity floating zones and airlocks.",
+            "create an abandoned hospital ward with debris and spooky ambience.",
+            "construct a gigantic mega-ramp stunt course ending in a massive pool of bouncing physics toys.",
+            "build a subterranean cave system with jumping platforms and stable stone layouts.",
+            "construct a giant bowling alley where players roll massive physics spheres down a long lane into stacked blocks.",
+            "build a towering spiral staircase tower reaching all the way to the top of the map boundary.",
+            "design a stunt arena featuring multiple looping ramps and jump gaps for high-speed runs.",
+            "construct a massive platforming puzzle built out of stacked crates and floating panels.",
+            "build a bouncy castle zone enclosed entirely by high-elasticity trampoline walls.",
+            "design a giant labyrinth maze built entirely out of tall upright wall props.",
+            "construct a suspended rope bridge pathway crossing a massive open drop zone.",
+            "build an indoor skate park layout featuring half-pipes, rails, and launch wedges.",
+            "design a towering column structure built from interlocking circular disk props.",
+            "construct a multi-tiered garage building complete with ramps connecting each parking level.",
+            "build a massive domino course using stacked upright panels in a winding pattern across the floor.",
+            "design an open-air amphitheater featuring tiered seating steps and a central stage platform.",
+            "construct a giant slide course starting from a high ledge and winding down to the main floor.",
+            "build a precision jumping course made of tiny, floating square block platforms.",
+            "design a heavy-duty cargo loading dock area stacked with crates, pallets, and shipping containers.",
+            "construct a giant pyramid structure built out of solid stacking physics blocks.",
+            "build a symmetrical stone temple ruin featuring standing pillar props and archways.",
+            "design a vertical climbing wall packed with hand-hold props leading to a sky platform.",
+            "construct a bouncy trampoline gauntlet course testing player momentum and air control.",
+            "build a massive open arena floor littered with hundreds of loose physics objects for chaotic sandbox testing."
+        ];
+
+        function getRandomIdea() {
+            const randomIndex = Math.floor(Math.random() * buildingIdeas.length);
+            document.getElementById('idea-box').innerText = buildingIdeas[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
