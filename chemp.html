@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>verikoolguy | idea generator</title>
+    <title>verikoolguy | chemp idea generator</title>
     
     <!-- Discord & Social Media Embed Metadata -->
     <meta property="og:site_name" content="verikoolguy's stuff">
-    <meta property="og:title" content="verikoolguy's idea generator">
+    <meta property="og:title" content="verikoolguy's chemp idea generator">
     <meta property="og:description" content="a website for verikoolguy's tools and things">
     <meta property="og:url" content="https://verikoolguy2.github.io/chemp.html">
     <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
 
     <!-- Twitter Card metadata -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="verikoolguy's idea generator">
+    <meta name="twitter:title" content="verikoolguy's chemp idea generator">
     <meta name="twitter:description" content="a website for verikoolguy's tools and things">
     <meta name="twitter:image" content="https://verikoolguy2.github.io/banner.png">
 
@@ -219,8 +219,8 @@
     <!-- main content -->
     <main>
         <div class="page-header">
-            <h1>random idea <span>generator</span></h1>
-            <p>hit the button below to spark your next creative dev session.</p>
+            <h1>chemp <span>idea generator</span></h1>
+            <p>press the button to generate random build ideas</p>
         </div>
 
         <div class="generator-card">
@@ -278,17 +278,9 @@
 
         function generateIdea() {
             const display = document.getElementById('ideaText');
-            display.style.opacity = 0;
-            
-            setTimeout(() => {
-                const randomIndex = Math.floor(Math.random() * ideas.length);
-                display.innerText = ideas[randomIndex];
-                display.style.opacity = 1;
-            }, 150);
+            const randomIndex = Math.floor(Math.random() * ideas.length);
+            display.innerText = ideas[randomIndex];
         }
-
-        // smooth fade-in transition style for the text container
-        document.getElementById('ideaText').style.transition = 'opacity 0.2s ease';
     </script>
 
 </body>
